@@ -1,0 +1,1 @@
+<html><body><h1>Admin</h1><div id="s"></div><script>async function load(){let r=await fetch("/admin/stats");let d=await r.json();s.innerHTML="Users:"+d.users+" Banned:"+d.banned;}setInterval(load,2000);</script></body></html>

@@ -1,0 +1,1 @@
+const mongoose=require("mongoose");module.exports=mongoose.model("User",new mongoose.Schema({phone:String,password:String,role:{type:String,default:"student"},balance:{type:Number,default:0},banned:{type:Boolean,default:false}}));
